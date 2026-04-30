@@ -1,9 +1,12 @@
+:root{
+    font-family: 'Verdana'
+}
 p{
     background-color: rgb(254, 226, 226);
 }
 
 .navContainer{
-    background-color: rgb(255, 248, 248);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     display: flex;
     align-items: center;
@@ -12,12 +15,24 @@ p{
 
 .navControls{
     border: none;
-    background-color: rgb(188, 211, 216);
-    padding: 2em;
+    width: 100%;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+    background-color: #32adff;
+    padding: 1.5em;
     font-size: 1.2em;
-    margin: 0em 3em 0em 3em;
+    transition: 0.2s ease-in;
 }
+a, a:visited, a:active, a:link{
+    text-decoration: none;
+    color: white;
+}
+
 
 .navControls:hover{
     background-color: blue;
+    width: 100em;
+    transition: 0.2s ease-in;
 }
