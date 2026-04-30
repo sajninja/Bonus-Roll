@@ -8,7 +8,10 @@ function App(){
     return(
         <div>
             <NavBar />
+            <p>Hello</p>
         </div>
     )
     
 }
+
+export default App
