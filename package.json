@@ -20,6 +20,7 @@
   "homepage": "https://github.com/kazmyriad/Bonus-Roll#readme",
   "dependencies": {
     "express": "^5.2.1",
+    "mongoose": "^9.6.1",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "vite": "^8.0.9"
