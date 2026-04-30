@@ -1,20 +1,39 @@
 // Needed Tabs: Dice Settings, Profile, Dice roller
 // We will def need vite for User info within the components
+import { useDispatch, useSelector } from "react-redux";
+import { setActiveLink } from "../features/nav/navSlice";
 import '../styles.css'
-// Use vite to omit the data from navbar to react elements for pages
+// Use Redux to omit the data from navbar to react elements for pages
 
-function NavBar() {
-    return (
-        <nav class="navContainer">        
-            <div class="navControls">
-                <a href="https://litera-ggh0.onrender.com/#/">
-                Dice Roller
-                </a>
-                </div>
-            <div class="navControls">Dice Settings</div>
-            <div class="navControls">Profile</div>
+const links = [
+    {id: "roller", label: "Roller"},
+    {id: "settings", label: "Settings"},
+    {id: "profile", label:"Profile"}
+];
+
+function NavBar(){
+    const dispatch = useDispatch();
+
+    // const isOpen = useSelector((state)=> state.nav.isOpen);
+    const activeLink = useSelector((state) => state.nav.activeLink);
+
+     return (
+        <nav>        
+            <div className="navContainer">
+                {links.map((link) => (
+                        <button
+                            key={link.id}
+                            className={activeLink === link.id ? "navControls active" : "navControls"}
+                            onClick={() => dispatch(setActiveLink(link.id))}
+                        >
+                            {link.label}
+                            </button>
+                ))}
+            </div>
         </nav>
     )
+    
 }
+
 
 export default NavBar
