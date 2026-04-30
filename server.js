@@ -1,4 +1,8 @@
 // Express App
+const connectDB = require("./src/config/database");
+const express   = require("express");
+
+const app = express();
 
 async function startServer() {
   await connectDB();
