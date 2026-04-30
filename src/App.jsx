@@ -3,12 +3,23 @@
 // import {COMPONENT NAME} from ''
 
 import NavBar from './components/NavBar.jsx'
+import { useSelector } from "react-redux";
+import Roller from "./components/Roller.jsx";
+import Settings from "./components/Settings.jsx";
+import Profile from "./components/Profile.jsx";
+
+
 
 function App(){
+    const activeLink = useSelector((state) => state.nav.activeLink);
+
     return(
         <div>
             <NavBar />
-            <p>Hello</p>
+            
+            {activeLink === "roller" && <Roller />}
+            {activeLink === "settings" && <Settings />}
+            {activeLink === "profile" && <Profile />}
         </div>
     )
     

@@ -36,3 +36,12 @@ a, a:visited, a:active, a:link{
     width: 100em;
     transition: 0.2s ease-in;
 }
+
+ul{
+    list-style-type: none;
+}
+
+
+.active {
+  background-color: #1896ea;
+}
