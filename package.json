@@ -19,10 +19,12 @@
   },
   "homepage": "https://github.com/kazmyriad/Bonus-Roll#readme",
   "dependencies": {
+    "@reduxjs/toolkit": "^2.11.2",
     "express": "^5.2.1",
     "mongoose": "^9.6.1",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
+    "react-redux": "^9.2.0",
     "vite": "^8.0.10"
   }
 }
