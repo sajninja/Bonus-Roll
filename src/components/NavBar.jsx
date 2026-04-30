@@ -2,7 +2,7 @@
 // We will def need vite for User info within the components
 
 function Navbar() {
-    return <div>hello</div>
+    return (<div>hello</div>)
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

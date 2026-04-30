@@ -2,9 +2,13 @@
 // Define page contents here
 // import {COMPONENT NAME} from ''
 
+import NavBar from './components/NavBar.jsx'
+
 function App(){
     return(
-        <p>Hello</p>
+        <div>
+            <NavBar />
+        </div>
     )
     
 }
